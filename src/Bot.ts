@@ -1,4 +1,4 @@
-import { ICommand, IFilter, IReactionCommand } from './interfaces/index'
+import { ICommand, IFilter, IReactionCommand } from './interfaces'
 import {
   Client,
   GuildMember,
@@ -13,7 +13,7 @@ export default class Bot {
   public commands: ICommand[] = [] // Liste les commandes à utiliser
   private reactionCommands: IReactionCommand[] = []
   private filters: IFilter[] = [] // Liste les filtres à utiliser
-  private apiKey: string // Clef d'api
+  private readonly apiKey: string // Clef d'api
   private client: Client
   private modos: string[] // Liste des modérateurs
   private modoRole: Role

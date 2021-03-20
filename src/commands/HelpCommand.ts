@@ -35,10 +35,7 @@ export default class HelpCommand extends Command implements ICommand {
       .join('\n')
     await this.replyDM(
       `Voici la liste de mes commandes disponibles :
-
-${help}
-
-Un bug / un problème avec le bot ? https://github.com/Grafikart/grafibot/issues`,
+      ${help}`,
       message
     )
   }
